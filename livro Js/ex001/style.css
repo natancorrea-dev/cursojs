@@ -1,0 +1,24 @@
+p{
+    text-align: justify;
+    font-size: 7px;
+}
+
+p.primeiro{
+ color: blue;
+ font-size: 4px;
+ text-align: right;
+}
+
+p.segundo{
+    text-align: left;
+}
+
+table{
+    color: green;
+    font-size: 6px;
+    text-align: center;
+}
+
+a:hover{
+ color: black;
+}

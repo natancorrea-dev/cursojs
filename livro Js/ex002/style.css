@@ -1,0 +1,54 @@
+body{
+    background-color: black;
+}
+
+h2{
+    color: yellow;
+}
+
+p{
+    color: white;
+    font: 14px;
+}
+
+a:hover{
+    color: aquamarine;
+}
+
+#vermelho{
+    color: red;
+}
+
+#verde{
+    color: green;
+}
+
+#amarelo{
+    color: yellow;
+}
+
+#azul{
+    color: blue;
+}
+
+#ciano{
+    color: #00c6c7;
+}
+
+#rosa{
+    color: palevioletred;
+}
+
+#roxo{
+    color: #4c007d;
+}
+
+#marrom{
+    color: brown;
+}
+    
+    
+    
+    
+    
+    
