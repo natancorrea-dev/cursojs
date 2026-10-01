@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <script src="calculadora.js">
+        function abrirCalc(){
+            window.open('calculadora-completa.html', 'calculadora', 'toolbar=no, \ location=no, directiores=no, menubar=no, \ scrollbars=no, resizable=no, menubar=no, top=250, left=450, \ width= 200, height=300')
+        }
+    </script>
+    <header>
+        <h1>Calculadora básica</h1>
+    </header>
+
+    <main>
+        <p>Calcule a vontade</p>
+    </main>
+    
+    <section>
+        <table bgcolor="#BBBBBB" border="0" cellpadding="3" cellspacing="0" summary="">
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="res" value="0" size="12" readonly>
+                    <input type="hidden" id="v1" value="0" >
+                    <input type="hidden" id="op" value="" >
+                </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="off" id="off" onclick='retornar()'></td>
+                <td><input type="button" value="c" id="lim" onclick='limpar()'></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="7" id="d7" onclick='digito("7")'></td>
+                <td><input type="button" value="8" id="d8" onclick='digito("8")'></td>
+                <td><input type="button" value="9" id="d9" onclick='digito("9")'></td>
+                <td><input type="button" value="/" id="div" onclick='operacao("/")'></td>
+            </tr>
+            
+            <tr>
+                <td><input type="button" value="4" id="d4" onclick='digito("4")'></td>
+                <td><input type="button" value="5" id="d5" onclick='digito("5")'></td>
+                <td><input type="button" value="6" id="d6" onclick='digito("6")'></td>
+                <td><input type="button" value="x" id="mul" onclick='operacao("x")'></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" id="d1" onclick='digito("1")'></td>
+                <td><input type="button" value="2" id="d2" onclick='digito("2")'></td>
+                <td><input type="button" value="3" id="d3" onclick='digito("3")'></td>
+                <td><input type="button" value="-" id="sub" onclick='operacao("-")'></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="0" id="d0" onclick='digito("0")'></td>
+                <td><input type="button" value="," id="sep" onclick='separador()'></td>
+                <td><input type="button" value="=" id="tot" onclick='total()'></td>
+                <td><input type="button" value="+" id="adi" onclick='operacao("+")'></td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+    </section>
+    
+    <footer>Veja mais <a href="https://github.com/natancorrea-dev">github</a></footer>
+    
+</body>
+</html>

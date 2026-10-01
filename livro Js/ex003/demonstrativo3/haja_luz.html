@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampadas</title>
+</head>
+<body>
+    <h1>Imagens</h1>
+
+    <img src="lamp_desl.png" alt="Lâmpada" id="lampada" onclick="alternar()">
+
+    <script>  
+    
+        let ligada = false
+
+        function alternar(){
+            const lampada = document.getElementById("lampada")
+
+            if (ligada){
+                lampada.src = "lamp_desl.png"
+            } else{
+                lampada.src = "lamp_lig.png"
+            }
+
+            ligada = !ligada
+        }
+
+//     <img src="lamp_desl.png" alt="Lâmpada" id="lampada" onclick="alternar()">
+
+//     <script>
+//         // function mudar(objeto, imagem){
+//         //  lampada.src = imagem
+//         // }
+//         function alternar(){
+//             const lampada = document.getElementById("lampada")
+//             ligada = !ligada
+//             lampada.src = ligada ? "lamp_lig.png" : "lamp_desl.png"
+//         }
+//     </script>
+ <!-- <a onmouseover="mudar('lampada','lamp-lig.png')" onmouseout="mudar('lampada', 'lamp-desl.png')"><img src="lamp_desl.png" alt="lamp" border="0" id="lampada"></a>
+   -->
+
+</body>
+</html>
