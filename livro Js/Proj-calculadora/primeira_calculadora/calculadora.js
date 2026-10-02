@@ -1,3 +1,7 @@
+// function abrirCalc(){
+//             window.open('calculadora-completa.html', 'calculadora', 'toolbar=no, \ location=no, directiores=no, menubar=no, \ scrollbars=no, resizable=no, menubar=no, top=250, left=450, \ width= 200, height=300')
+//         }
+
 function String2Number(valor){
     valor = valor.replace(",",".")
     return (parseFloat(valor))
@@ -43,7 +47,8 @@ function limpar() {
 }
 
 function retornar() {
-             window.alert('Espero que tenha gostado!');
+            //  window.opener.valor.value = res.value
+             window.close()
 }
 
 //  function abrirCalc() {

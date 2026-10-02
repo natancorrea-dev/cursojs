@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação entre páginas</title>
+    <style>
+        header{
+            padding: 10%;
+            text-align: center;
+        }
+
+        footer{
+            padding: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-block: calc(1,21);
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        function abrirCalc(){
+            window.open('calculadora-completa.html', 'calculadora', 'toolbar=no, \ location=no, directiores=no, menubar=no, \ scrollbars=no, resizable=no, menubar=no, top=250, left=450, \ width= 200, height=300')
+        }
+
+        function retornar() {
+             window.opener.valor.value = res.value
+             window.close()
+        }
+    </script>
+    <header>
+        <h1>Fazendo interações</h1>
+    </header>
+    <main>
+        <input type="button" value="calculadora" onclick="abrirCalc()">
+        <input type="text" value="0" id="valor">
+    </main>
+
+    <footer>Veja mais <a href="https://github.com/natancorrea-dev">github</a></footer>
+
+</body>
+</html>
